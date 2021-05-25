@@ -19,17 +19,17 @@ const useStyles = makeStyles((theme) => ({
     textField2: {
         marginLeft: theme.spacing(0),
         marginRight: theme.spacing(1),
-        width: 50,
+        width: 60,
     },
 }));
 export default function DatePickers() {  
     const classes = useStyles();
-    const [myDate,setMydate] = useState("民國110年-05月-25號")  
+    const [myDate,setMydate] = useState("民國89年-10月-10號")  
     return (    
         <form className={classes.container} noValidate>      
             <TextField value={myDate}
                 id="basic"
-                label="去阿公店喝茶囉!!!"
+                label="跟阿公喝茶囉!!!"
                 className={classes.textField}
                  InputLabelProps={{
                      shrink: true
